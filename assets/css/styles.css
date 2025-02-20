@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  display: inline;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(236, 0, 36, 0.5);
+  color: #fefefe;
+}
+
+#sejarah, 
+#warna, 
+#stadion, 
+#prestasi,
+#museum, 
+#academy {
+  padding-top: 4.5rem;
+}
+
+#sejarah h2, 
+#warna h2, 
+#stadion h2, 
+#prestasi h2,
+#museum h2,
+#academy h2  {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  padding: 13rem 5%;
+  background-image: url('../img/bg.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.jumbotron h3 {
+  text-shadow: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5a010e;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  list-style-type: none;
+  gap: 1.2rem;
+}
+
+.navbar .navbar-nav li {
+  padding: 0.1rem;
+  margin: 0;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffb300;
+}
+
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1.2rem;
+  background-color: #ce0041;
+}
+
+main {
+  padding: 1.2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 3;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* Sejarah */
+.sejarah-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info figcaption {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+/* Warna */
+.warna-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.warna-container figure {
+  width: 48%;
+  margin: 0;
+}
+.warna-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.warna-description {
+  padding-right: 2rem;
+  width: 48%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+}
+
+/* Stadion */
+.stadion-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.stadion-container figure {
+  width: 48%;
+  margin: 0;
+}
+.stadion-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.stadion-description {
+  width: 48%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+}
+
+/* Prestasi */
+.prestasi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.prestasi-container figure {
+  width: 48%;
+  margin: 0;
+}
+.prestasi-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.prestasi-description {
+  width: 48%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+}
+
+/* Museum */
+.museum-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info figcaption {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+/* Academy */
+.academy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.academy-container figure {
+  width: 48%;
+  margin: 0;
+}
+.academy-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.academy-description {
+  width: 48%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+}
+
+
+/* Konten Samping */
+aside {
+  flex: 1;
+}
+
+/* fakta */
+.fakta header {
+  text-align: center;
+}
+
+aside .fakta h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fakta img{
+  padding: 1.2rem;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+aside .fakta h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1.2rem;
+  text-align: left;
+  border-top: 2px solid #c58a01;
+  padding-top: 8px;
+}
+
+aside .fakta p {
+  text-align: justify;
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+aside .fakta a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Profile */
+.profile {
+  margin-top: 2rem;
+}
+
+aside .profile {
+  padding: 1.2rem;
+  background-color: #ce0041;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 5px;
+}
+
+aside .card h2 {
+  font-size: 1.5rem;
+  color: #ffb300;
+  margin-bottom: 1.2rem;
+}
+
+aside .profile .profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+aside .profile p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-align: justify;
+}
+
+/* Kontak dan Sosial Media */
+.contact-social {
+  margin-top: 1.2rem;
+}
+
+.contact-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffb300;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #5a010e;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.contact-social .social-icons img {
+  margin-top: 8px;
+  max-width: 3rem;
+  height: auto;
+}
+
+
+/* Footer */
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  background-color: #5a010e;
+}
+
+
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  } 
+
+  #service, 
+  #about, 
+  #testimoni, 
+  #contact {
+    padding-top: 5.7rem;
+}
+
+main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
